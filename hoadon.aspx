@@ -12,11 +12,11 @@
                 <asp:BoundField DataField="ms" HeaderText="ms" ReadOnly="True" SortExpression="ms" />
                 <asp:BoundField DataField="trang_thai_hd" HeaderText="trang_thai_hd" SortExpression="trang_thai_hd" />
                 <asp:BoundField DataField="ms_khach_hang" HeaderText="ms_khach_hang" SortExpression="ms_khach_hang" />
-                <asp:CommandField ButtonType="Button" ShowDeleteButton="true" DeleteText="Delete" ShowEditButton="true" EditText="Edit" ShowInsertButton="true" InsertText="Insert" />
+                <asp:CommandField ButtonType="Button" ShowDeleteButton="true" DeleteText="Delete" ShowEditButton="true" EditText="Edit" ShowInsertButton="true" InsertText="Insert" ControlStyle-BackColor="#CC0000" />
             </Fields>
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
             <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+            <PagerStyle BackColor="red" ForeColor="White" HorizontalAlign="Center" />
             <RowStyle BackColor="#EFF3FB" />
         </asp:DetailsView>
         <asp:SqlDataSource ID="hoadon" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [hoa_don] WHERE [ms] = @original_ms AND [trang_thai_hd] = @original_trang_thai_hd AND [ms_khach_hang] = @original_ms_khach_hang" InsertCommand="INSERT INTO [hoa_don] ([ms], [trang_thai_hd], [ms_khach_hang]) VALUES (@ms, @trang_thai_hd, @ms_khach_hang)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [ms], [trang_thai_hd], [ms_khach_hang] FROM [hoa_don]" UpdateCommand="UPDATE [hoa_don] SET [trang_thai_hd] = @trang_thai_hd, [ms_khach_hang] = @ms_khach_hang WHERE [ms] = @original_ms AND [trang_thai_hd] = @original_trang_thai_hd AND [ms_khach_hang] = @original_ms_khach_hang">
