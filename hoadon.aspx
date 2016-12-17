@@ -16,7 +16,7 @@
             </Fields>
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
             <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="red" ForeColor="White" HorizontalAlign="Center" />
+            <PagerStyle BackColor="blue" ForeColor="White" HorizontalAlign="Center" />
             <RowStyle BackColor="#EFF3FB" />
         </asp:DetailsView>
         <asp:SqlDataSource ID="hoadon" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [hoa_don] WHERE [ms] = @original_ms AND [trang_thai_hd] = @original_trang_thai_hd AND [ms_khach_hang] = @original_ms_khach_hang" InsertCommand="INSERT INTO [hoa_don] ([ms], [trang_thai_hd], [ms_khach_hang]) VALUES (@ms, @trang_thai_hd, @ms_khach_hang)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [ms], [trang_thai_hd], [ms_khach_hang] FROM [hoa_don]" UpdateCommand="UPDATE [hoa_don] SET [trang_thai_hd] = @trang_thai_hd, [ms_khach_hang] = @ms_khach_hang WHERE [ms] = @original_ms AND [trang_thai_hd] = @original_trang_thai_hd AND [ms_khach_hang] = @original_ms_khach_hang">
